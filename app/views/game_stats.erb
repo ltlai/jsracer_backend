@@ -1,0 +1,7 @@
+Game Stats
+
+<p>Game id: <%= @game.id %></p>
+<p>Players: <%= @game.players.map(&:name).join(", ") %></p>
+<p>Winner: <%= Player.find(@game.winner_id).name %></p>
+<p>Time to win: <%= (@game.winning_time / 1000).round(2) %> seconds</p>
+

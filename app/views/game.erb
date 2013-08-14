@@ -1,0 +1,30 @@
+<table class="racer_table">
+  <tr id="player1_strip" player-id="<%= @game.players.first.id %>">
+    <td class="active"></td>
+    <td ></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr id="player2_strip" player-id="<%= @game.players.last.id %>">
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> <br>
+
+<div id="stats">
+  <a href="/games/<%= @game.id %>/stats">See Game Stats</a>
+</div>
